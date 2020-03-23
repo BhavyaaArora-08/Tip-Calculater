@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tip Calculater</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <form id="form">
+    <div class="container">
+      <br>
+      <!-- Total Bill -->
+      <div class="first">
+        <div class="total">
+          <h2>Total Per Person</h2>
+          <br>
+          <p id="total">$</p>
+        </div>
+        <br>
+
+      </div>
+      <div class="second">
+        <div class="row">
+          <div class="col col-lg-6 col-md-6 col-sm-6">
+            <h3>Bill Amount</h3>
+          </div>
+          <div class="col col-lg-6 col-md-6 col-sm-6">
+            <input id="bill" type="text" name="bill" class="bill" value="$" placeholder="Bill">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-lg-6 col-md-6 col-sm-6">
+            <h3>Split</h3>
+          </div>
+          <div class="col col-lg-6 col-md-6 col-sm-6">
+            <input id="split" type="number" class="count" name="split" value="0">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-lg-6 col-md-6 col-sm-6">
+            <h3>Tip</h3>
+          </div>
+          <div class="col col-lg-6 col-md-6 col-sm-6">
+            <input type="range" min="0" max="100" value="50" step="5" class="slider" id="myRange">
+            <p id="demo"></p>
+          </div>
+        </div>
+
+      </div>
+      <div class="third pr">
+        <button id="press" type="submit" class="btn btn-success" name="button">FIND</button>
+      </div>
+      <!-- Tip per person,Total Tip -->
+      <div class="third">
+        <span>Tip Per Person</span>
+        <p  class="output" id="tpp"></p>
+        <span>Total Tip</span>
+        <p class="output" id="ttp"></p>
+      </div>
+    </div>
+  </form>
+  <script src="js/script.js" charset="utf-8"></script>
+</body>
+
+</html>
